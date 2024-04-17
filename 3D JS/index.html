@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Card Effect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="pc">
+                <div class="circle"></div>
+                <img src="./pc.png" alt="an old computer">
+            </div>
+            <div class="info">
+                <h1 class="title">The PC of the Future</h1>
+                <div class="yes">
+                    <button onclick="playYesSound();">Yes</button>
+                </div>
+                <h3>Or</h3>
+                <div class="no">
+                    <button onclick="playNoSound();">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="yesSound">
+        <source src="yes.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <audio id="noSound">
+        <source src="no.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="./app.js"></script>
+</body>
+</html>
